@@ -1,7 +1,7 @@
 <h2>PHIBSS2 bulge/disc decomposition scheme</h2>
 
 <p align="justify">
-These python programs enable to carry out bulge/disc decompositions on HST images of galaxies as in the PHIBSS2 article <a href="https://ui.adsabs.harvard.edu/abs/2019A%26A...622A.105F/abstract"  style="text-decoration:none" class="type1">Freundlich et al. (2019)</a>. The scheme is based on <a href="https://users.obs.carnegiescience.edu/peng/work/galfit/galfit.html"  style="text-decoration:none" class="type1">galfit</a> (<a href="https://ui.adsabs.harvard.edu/abs/2002AJ....124..266P/abstract"  style="text-decoration:none" class="type1">Peng et al. 2002</a>, <a href="https://ui.adsabs.harvard.edu/abs/2010AJ....139.2097P/abstract"  style="text-decoration:none" class="type1">Peng et al. 2010</a>). It aims at compensating for the sensitivity of galfit to the initial parameter guesses and the resulting degeneracy of the solutions when carrying out two-component fits. The method is explained in BT_method.pdf ("Method followed in this paper") together with discussions on other methods used in the litterature (Bruce et al. 2012, Lang et al. 2014, Contini et al. 2016). It is based on the following article: 
+These python programs enable to carry out bulge/disc decompositions on HST images of galaxies as in the PHIBSS2 article <a href="https://ui.adsabs.harvard.edu/abs/2019A%26A...622A.105F/abstract"  style="text-decoration:none" class="type1">Freundlich et al. (2019)</a>. The scheme is based on <a href="https://users.obs.carnegiescience.edu/peng/work/galfit/galfit.html"  style="text-decoration:none" class="type1">galfit</a> (<a href="https://ui.adsabs.harvard.edu/abs/2002AJ....124..266P/abstract"  style="text-decoration:none" class="type1">Peng et al. 2002</a>, <a href="https://ui.adsabs.harvard.edu/abs/2010AJ....139.2097P/abstract"  style="text-decoration:none" class="type1">Peng et al. 2010</a>). It aims at compensating for the sensitivity of galfit to the initial parameter guesses and the resulting degeneracy of the solutions when carrying out two-component fits. The method is explained in BT_method.pdf ("Method followed in this paper") together with discussions on other methods used in the litterature. It was used in the following article: 
 </p>
 
 <p align="justify">
@@ -12,4 +12,13 @@ These python programs enable to carry out bulge/disc decompositions on HST image
 <p align="justify">
 The main program is BT_run.py. The method involves a preliminary study to obtain the relation between the bulge/disc size ratio Rb/Rd, bulge-to-total light ratio B/T and the Sersic fit parameters n_Sersic and R_Sersic, used to set the initial guesses for the two component fits. The program doing this preliminary study is Sersic_ideal.py: it generates mock observations of bulge+disk systems and fits them with a single Sersic. 
 </p>
+
+<h4 align="justify">Steps followed by this bulge/disc decomposition scheme</h4>
+<ol>
+  <li>Empirical study of the single-component Sérsic indices of noise-free two-component bulge disk systems.</li>
+  <li>Single-Sérsic fits to the observed galaxies.</li>
+  <li>One-component pure disk and pure bulge fits to the galaxies.</li>
+  <li>Two-component bulge disk fits to the galaxies with different initial guesses.</li>
+  <li>Best-fit model selection based on the lowest reduced chi-square.</li>
+</ol>
 
