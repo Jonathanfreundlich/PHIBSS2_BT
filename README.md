@@ -10,7 +10,7 @@ These python programs enable to carry out bulge/disc decompositions on HST image
 </p>
 
 <p align="justify">
-  The main program is <a href="BT_run.py"  style="text-decoration:none" class="type1">BT_run.py</a>. The method involves a preliminary study to obtain the relation between the bulge/disc size ratio Rb/Rd, bulge-to-total light ratio B/T and the Sersic fit parameters n_Sersic and R_Sersic, used to set the initial guesses for the two component fits. The program doing this preliminary study is <a href="Sersic_ideal.py"  style="text-decoration:none" class="type1">Sersic_ideal.py</a>: it generates mock observations of bulge+disk systems and fits them with a single Sersic. 
+ The main program is <a href="BT_run.py"  style="text-decoration:none" class="type1">BT_run.py</a>. The method involves a preliminary study to obtain the relation between the bulge/disc size ratio Rb/Rd, bulge-to-total light ratio B/T and the Sersic fit parameters n_Sersic and R_Sersic, used to set the initial guesses for the two component fits. The program doing this preliminary study is <a href="Sersic_ideal.py"  style="text-decoration:none" class="type1">Sersic_ideal.py</a>: it generates mock observations of bulge+disk systems and fits them with a single Sersic. The program <a href="BT_figure.py"  style="text-decoration:none" class="type1">BT_figure.py</a> plots the initial image, best-fit model, residuals, and circular 
 </p>
 
 <h4 align="justify">Steps followed by this bulge/disc decomposition scheme</h4>
