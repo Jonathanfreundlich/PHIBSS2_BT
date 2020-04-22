@@ -22,5 +22,6 @@ These python programs enable to carry out bulge/disc decompositions on HST image
   <li>Best-fit model selection based on the lowest reduced chi-square.</li>
 </ol>
 
- <img src="XL55_composite01_model.jpg"  width=100%>
+<br />
+<img src="XL55_composite01_model.jpg"  width=100%>
 
