@@ -1,0 +1,35 @@
+===============================================================================
+# IMAGE and GALFIT CONTROL PARAMETERS 
+A) l14co008-acs-I-r.fits                  # Input data image (FITS file) 
+B) sersic.fits                  # Output data image block 
+C) sigma.fits                  # Sigma image name (made from data if blank or "none") 
+D) ACS1_F814W_G2V.fits                  # Input PSF image and (optional) diffusion kernel 
+E) 1                   # PSF fine sampling factor relative to data 
+F) none                # Bad pixel mask (FITS image or ASCII coord list) 
+G) sersic.constraints                  # File with parameter constraints (ASCII file) 
+H) 1 510 1 510         # Image region to fit (xmin xmax ymin ymax) 
+I) 264 264               # Size of the convolution box (x y) 
+J) 0                   # Magnitude photometric zeropoint 
+K) 0.038  0.038        # Plate scale (dx dy)    [arcsec per pixel] 
+O) regular             # Display type (regular, curses, both) 
+P) 0                   # Choose: 0=optimize, 1=model, 2=imgblock, 3=subcomps 
+
+# Object: sersic 
+ 0) sersic                 #  Component type
+ 1) 250 250 1 1              #  position x, y 
+ 3) -5.000000 1                  #  Integrated magnitude 
+ 4) 10.000000 1                  #  R_e (half-light radius) [pix] 
+ 5) 1.000000 1                  #  Sersic index n (de Vaucouleurs n=4)
+ 6) 0.0000      0          #     ----- 
+ 7) 0.0000      0          #     ----- 
+ 8) 0.0000      0          #     ----- 
+ 9) 1.000000 1                   #  axis ratio (b/a) 
+ 10) 0.000000 1                  #  position angle (PA) [deg: Up=0, Left=90] 
+ Z) 0                      #  Skip this model in output image?  (yes=1, no=0)
+
+# Object: sky 
+ 0) sky                    #  object type 
+ 1) 0.000000 1                  # sky background at center of fitting region [ADUs] 
+ 2) 0.0000      0          # dsky/dx (sky gradient in x) 
+ 3) 0.0000      0          # dsky/dy (sky gradient in y) 
+ Z) 0                      # output option (0 = resid., 1 = Do not subtract) 
