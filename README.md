@@ -13,7 +13,7 @@ These python programs enable to carry out bulge/disc decompositions on Hubble Sp
  The main program is <a href="BT_run.py"  style="text-decoration:none" class="type1">BT_run.py</a>. The method involves a preliminary study to obtain the relation between the bulge/disc size ratio (Rb/Rd), bulge-to-total light ratio (B/T) and the Sersic fit parameters, used to set a grid of initial guesses for the two component fits. The program doing this preliminary study is <a href="Sersic_ideal.py"  style="text-decoration:none" class="type1">Sersic_ideal.py</a>: it generates mock observations of bulge+disk systems and fits them with a single Sersic profile. The program <a href="BT_figure.py"  style="text-decoration:none" class="type1">BT_figure.py</a> plots the initial image, best-fit two-component model, residuals, and averaged radial profile. Satellite galaxies can be modelled simultaneously with a single Sersic profile. 
 </p>
 
-<h4 align="justify">Steps followed by this bulge/disc decomposition scheme</h4>
+<h4 align="justify">Steps followed by this bulge/disc decomposition scheme:</h4>
 <ol>
   <li>Empirical study of the single-component Sérsic indices of noise-free two-component bulge disk systems.</li>
   <li>Single-Sérsic fits to the observed galaxies.</li>
@@ -23,5 +23,6 @@ These python programs enable to carry out bulge/disc decompositions on Hubble Sp
 </ol>
 
 <br />
+<h4 align="justify">Example:</h4>
 <img src="XL55_composite01_model.jpg"  width=100%>
 
