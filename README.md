@@ -23,6 +23,6 @@ These python programs enable to carry out bulge/disc decompositions on Hubble Sp
 </ol>
 
 <br />
-<h4 align="justify">Example:</h4>
+
 <img src="XL55_composite01_model.jpg"  width=100%>
 
